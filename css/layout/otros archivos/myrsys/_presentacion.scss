@@ -1,0 +1,126 @@
+.myrsys{
+	background-color : $Blancobgcolor;
+
+	.myrsys-cont{
+		height : 100vh;
+		background-image : url("../img/MyrPre 1mdpi.png");
+		background-attachment : fixed;
+		background-position : center center;
+		//background-size : cover;
+		background-size : 35% 35%;//70% 55%;
+		background-repeat : no-repeat;
+	}
+}
+
+@media (max-width : $moviles){
+	.myrsys{
+		.myrsys-cont{
+			height : 100vh;
+			background-image : url("../img/MyrsysM 3xxxhdpi.png");
+			background-attachment : fixed;
+			background-position : center center;
+			//background-size : cover;
+			//background-size : 60% 60%;//65% 50%;
+			background-repeat : no-repeat;
+		}
+	}
+}
+
+/*.presentacion{
+	background-color : $Blancobgcolor;
+
+	.presentacion-cont{
+		display : flex; 
+		flex-direction : column;
+		margin-top : 180px;
+		margin-bottom: 110px;
+
+		.presentacion-cont_img{
+			display : flex; 
+			justify-content: center;
+			margin : 100px;
+		}
+
+		.presentacion-cont_img_responsive{
+			display : none;
+		}
+
+		.presentacion-cont_descripcion{
+			display : flex; 
+			justify-content : center;
+			padding : 10px;
+
+			&_texto{
+				text-align : center;
+				color : $Negrobgcolor;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+@media (max-width : 620px){
+	.presentacion{
+		background-color : $Blancobgcolor;
+
+		.presentacion-cont{
+			display : flex; 
+			flex-direction : column;
+
+			.presentacion-cont_img{
+				display : flex; 
+				justify-content: center;
+			}
+
+			.presentacion-cont_img_responsive{
+				display : none;
+			}
+
+			.presentacion-cont_descripcion{
+				display : flex; 
+				justify-content : center;
+
+				&_texto{
+					text-align : center;
+					color : $Negrobgcolor;
+					font-style: italic;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width :$moviles){
+	.presentacion{
+		background-color : $Blancobgcolor;
+
+		.presentacion-cont{
+			display : flex; 
+			flex-direction : column;
+			margin-top : 95px;
+
+			.presentacion-cont_img{
+				display : none;
+			}
+
+			.presentacion-cont_img_responsive{
+				display : flex; 
+				justify-content: center;
+				margin : 75px;
+			}
+
+			.presentacion-cont_descripcion{
+				display : flex; 
+				justify-content : center;
+
+				&_texto{
+					text-align : center;
+					color : $Negrobgcolor;
+					font-style: italic;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}*/

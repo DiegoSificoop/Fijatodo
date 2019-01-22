@@ -1,0 +1,11 @@
+.icon-whatsapp{
+	position: fixed;
+	bottom : 185px;//176px;
+	right: -10px;//-25px;
+	z-index: 1002;
+
+	&_size{
+		width : 82px;
+		border-radius: 50%;
+	}
+}

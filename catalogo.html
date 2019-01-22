@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0"/>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+	<title>Catálogo | Fija-Todo</title>
+</head>
+<body>
+	<section class="m-section topBar" id="menu">
+      <div class="m-center">
+        <div class="menu_bar">
+          <div class="cont-menu_logo"><a href="index.html"><img src="img/fija-todo.png" alt="FijaTodo"/></a></div>
+          <div class="cont-menu_menu"><a class="btn_menu icon-menu" id="burguer-button"></a></div>
+          <!--<div class="cont-menu_menu"><a class="fa fa-bars btn_menu"></a></div>-->
+        </div>
+        <div class="cont-menu">
+          <div class="cont-menu_logo"><a href="index.html"><img src="img/fija-todo.png" alt="dasandapps"/></a></div>
+          <div class="cont-menu_menu" id="menu">
+            <ul class="menu-ul">
+              <li class="menu-ul_li"><a class="menu-ul_li_a" href="#inicio">Inicio</a></li>
+              <li class="menu-ul_li"><a class="menu-ul_li_a" href="nosotros.html">Nosotros</a></li>
+              <li class="menu-ul_li catalogo"><a class="menu-ul_li_a" href="catalogo.html">Catálogo</a></li>
+              <li class="menu-ul_li"><a class="menu-ul_li_a" href="politicas.html">Políticas</a></li>
+              <li class="menu-ul_li"><a class="menu-ul_li_a" href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--<div class="cont-catalogo">
+	   	<div class="cont-catalogo_opciones">
+	    	<img src="img/Tornillos.jpg">
+	    	<img src="img/Tornillos.jpg">
+	    </div>
+	  </div>  width: 980px  height: 450px-->
+    </section>
+
+	<section class="m-section catalogos">
+		<div class="m-center">
+			<div class="cont-catalogoPrincipal">
+				<a href="tornilleria/index.html" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Tornilleria</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Elementos de fijación</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Conexiones</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Ferreteria</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Herramientas</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Equipo de seguridad</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Manejo de materiales</span></a>
+				<a href="" class="cont-catalogoPrincipal_opcion"><img src="img/Tornillos.jpg" alt="Tornillos"><span>Aceros especiales y plasticos de ingenieria</span></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="m-section contacto" id="contacto">
+		<div class="m-center">
+			<div class="cont_contacto">
+				<div class="cont_contacto_elementos">
+					<div class="cont_contacto_elementos_redes">
+						<a class="cont_contacto_elementos_redes_icono" href="http://www.facebook.com/dasandapps" target="_blank"><span class="fa fa-facebook-official"></span></a>
+					</div>
+					<div class="cont_contacto_elementos_datos">
+						<div class="cont_contacto_elementos_datos_items">
+							<!--<span class="fa fa-phone-square"> 3411231234</span>-->
+							<span class="fa fa-phone-square cont_contacto_elementos_datos_items_icono"></span><span class="cont_contacto_elementos_datos_items_descripcion"> 3411231234</span>
+						</div>
+					</div>
+					<div class="cont_contacto_elementos_datos">
+						<div class="cont_contacto_elementos_datos_items">
+							<span class="fa fa-envelope"><a href="mailto:contacto@dasandapps.com"> fija_todo@hotmail.com</a>
+						</div>
+					</div>
+					<div class="cont_contacto_elementos_datos">
+						<div class="cont_contacto_elementos_datos_items">
+							<!--<span class="fa fa-map-marker"> Constitución #440, Colonia centro, Ciudad Guzmán, Jalisco.</span>-->
+							<span class="fa fa-map-marker cont_contacto_elementos_datos_items_icono"></span><span class="cont_contacto_elementos_datos_items_descripcion"> Constitución #440, Colonia centro, Ciudad Guzmán, Jalisco.</span>
+						</div>
+					</div>
+				</div>
+				<div class="cont_contacto_form">
+	              <h6 class="cont_contacto_form_titulo">Envíanos un correo</h6>
+	              <form action="enviarCorreo.php" method="POST" id="valform">
+	                <input class="cont_contacto_form_input" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" autocomplete="off"/>
+	                <input class="cont_contacto_form_input" type="text" name="email" id="email" placeholder="Ingresa tu correo electrónico" autocomplete="off"/>
+	                <textarea class="cont_contacto_form_input" name="comentario" id="texto" placeholder="Escribenos"></textarea>
+	                <input class="cont_contacto_form_boton" type="submit" value="Enviar"/>
+	              </form>
+	            </div>
+			</div>
+			<div class="cont_contacto_derechos">
+            	<h6 class="cont_contacto_derechos_texto">Fija-Todo 2019© Todos los derechos reservados</h6>
+          	</div>
+		</div>
+	</section>
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/newmenu.js"></script>
+</body>
+</html>

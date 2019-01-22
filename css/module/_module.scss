@@ -1,0 +1,136 @@
+.m-section{
+	display : flex;
+	justify-content : center;
+}
+
+.m-center{
+	width : 90%;//1220px;
+}
+
+ .m_lineBottom_negro{
+    border-bottom : 4px solid $Colornegro;
+    display       : inline-block;
+    width         : 150px;
+    padding       : 1.5rem 0 0;
+ }
+
+ .m_lineBottom_rojo{
+    border-bottom : 4px solid  $Colorrojo;
+    display       : inline-block;
+    width         : 150px;
+    padding       : 1.5rem 0 0;
+ }
+
+ .m_lineBottom_amarillo{
+    border-bottom : 4px solid $Coloramarillo;
+    display       : inline-block;
+    width         : 150px;
+    padding       : 1.5rem 0 0;
+ }
+
+
+ /*Modulo para letras de encabezados negros
+.conteneg-titulo{
+    display : flex;
+    flex-direction: column;
+
+    .conteneg-titulo-cont{
+        display : flex; 
+        flex-direction: column;
+
+        &_titulo{
+            display : flex; 
+            justify-content: center;
+
+            &_color{
+                color : $Colortitulonegro;
+            }
+        }
+
+        &_span{
+            display : flex; 
+            justify-content : center;
+        }
+    }
+}
+
+@media (max-width : $moviles){
+    .conteneg-titulo{
+        display : flex;
+        flex-direction: column;
+
+        .conteneg-titulo-cont{
+            display : flex; 
+            flex-direction: column;
+
+            &_titulo{
+                display : flex; 
+                justify-content: center;
+
+                &_color{
+                    color : $Colortitulonegro;
+                    font-size: 1.5em;
+                    text-align : center;
+                }
+            }
+
+            &_span{
+                display : flex; 
+                justify-content : center;
+            }
+        }
+    }
+}*/
+
+/*Modulo para letras de encabezados grises
+.contegris-titulo{
+    display : flex;
+    flex-direction: column;
+
+    .contegris-titulo-cont{
+        display : flex; 
+        flex-direction: column;
+
+        &_titulo{
+            display : flex; 
+            justify-content: center;
+
+            &_color{
+                color : $Colortitulogris;
+            }
+        }
+
+        &_span{
+            display : flex; 
+            justify-content : center;
+        }
+    }
+}
+
+@media (max-width : $moviles){
+    .contegris-titulo{
+        display : flex;
+        flex-direction: column;
+
+        .contegris-titulo-cont{
+            display : flex; 
+            flex-direction: column;
+
+            &_titulo{
+                display : flex; 
+                justify-content: center;
+
+                &_color{
+                    color : $Colortitulogris;
+                    font-size: 1.5em;
+                    text-align : center;
+                }
+            }
+
+            &_span{
+                display : flex; 
+                justify-content : center;
+            }
+        }
+    }
+}*/

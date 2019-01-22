@@ -1,0 +1,62 @@
+// Estilos imagenes
+$mx-width : 100%;
+
+// Estilos de enlaces
+$link--color : initial;
+
+//Resoluciones de pantalla
+$moviles : 480px;//768px / 320px
+$tabletas : 880px;//992px;//992px
+$pcs : 1200px;
+
+//Colores para menú de usuarios y administrador
+$BGmenuuno :white;//Ivory;//Color de fondo para el menú
+$BGmenudos : #EEECE8;//Color de fondo para las opciones de submenu
+$BGhoversubmenu : #DCDCDC;//#f2f2f2//Color de fondo para el evento hover
+$BGbotonhover : #1F618D;//#B40404;//Color para evento hover del boton
+
+
+@import "base/_reset";
+@import "base/_fuente";
+@import "base/_colores";
+@import "base/_base";
+@import "module/_module";
+@import "font-awesome-4.7.0/scss/font-awesome";
+@import "layout/inicio/_menu"; 
+@import "layout/inicio/_slogan";
+@import "layout/inicio/_info";
+@import "layout/inicio/_servicios";
+@import "layout/inicio/_contacto";
+@import "layout/inicio/_iconwhats";
+@import "layout/inicio/_principal";
+@import "layout/inicio/_promocion";
+
+@import "layout/nosotros/_imageninicio";
+@import "layout/nosotros/_historia";
+@import "layout/nosotros/_misvi";
+@import "layout/nosotros/_valores";
+
+@import "layout/catalogo/_catalogop";
+
+@import "layout/admin/_login";
+@import "layout/admin/_menu";
+@import "layout/admin/_formularios";
+@import "layout/admin/_inicio";
+
+//@import "layout/_prueba";
+/*@import "font-awesome-4.7.0/scss/font-awesome";
+@import "layout/_menu";
+@import "layout/_inicio";
+@import "layout/_nosotros";
+@import "layout/_servicios";
+@import "layout/_productos";
+@import "layout/_clientes";
+
+@import "layout/nosotros/_acerca";
+@import "layout/nosotros/_valores";
+@import "layout/myrsys/_myrsysinve";
+@import "layout/myrsys/_myrsyshotel";
+@import "layout/myrsys/_myrsysbitacora";
+@import "layout/myrsys/_presentacion";
+@import "layout/myrsys/_serviciosmyr";
+@import "layout/myrsys/_paquete";*/

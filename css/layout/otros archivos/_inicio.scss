@@ -1,0 +1,27 @@
+.inicio{
+	background-color : $Negrobgcolor;
+
+	.inicio-cont{
+		height : 100vh;
+		background-image : url("../img/DasPre 1xhdpi.png");
+		background-attachment : fixed;
+		background-position : center center;
+		//background-size : cover;
+		background-size : 65% 65%;//70% 55%;
+		background-repeat : no-repeat;
+	}
+}
+
+@media (max-width : $moviles){
+	.inicio{
+		.inicio-cont{
+			height : 100vh;
+			background-image : url("../img/DasM 3xxxhdpi.png");
+			background-attachment : fixed;
+			background-position : center center;
+			//background-size : cover;
+			background-size : 60% 60%;//65% 50%;
+			background-repeat : no-repeat;
+		}
+	}
+}

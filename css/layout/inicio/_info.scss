@@ -1,0 +1,30 @@
+.info{
+	display: flex;
+	justify-content: center;	
+	height: 180px;
+	margin-top: -3px;
+	background-color: $Colorgris;
+
+	.cont-info{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		& h4{
+			color : $ColorRojoIns;
+			text-align: center;
+		}
+	}		
+}
+
+@media screen and (max-width: $moviles){
+	.info{
+		.cont-info{
+			& h4{
+				color : $ColorRojoIns;
+				text-align: center;
+				font-size: 1.5em;
+			}
+		}		
+	}
+}

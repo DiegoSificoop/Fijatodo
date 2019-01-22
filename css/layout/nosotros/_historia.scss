@@ -1,0 +1,26 @@
+.cont-historia{
+	display: flex;
+	flex-direction: column;
+
+	&_titulo{
+		margin-top: 20px;
+		padding: 20px;
+	}
+
+	&_descripcion{
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: $tabletas){
+	.cont-historia{
+		&_titulo h4{
+			font-size: $TamanoTitulosRes;
+		}
+
+		&_descripcion p{
+			text-align: justify;
+			font-size: $TamanoLetrasRes;
+		}
+	}
+}

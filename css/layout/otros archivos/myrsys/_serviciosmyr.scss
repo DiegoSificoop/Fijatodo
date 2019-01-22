@@ -1,0 +1,178 @@
+.serviciosmyr{
+	//height : 100vh;
+	background-color : $Grisbgcolor;
+
+	.serviciosmyr-cont{
+		display : flex; 
+		flex-direction: column;
+		margin-top: 85px;
+		margin-bottom : 70px;
+
+		.serviciosmyr-titulo{
+			display : flex;
+			flex-direction: column;
+
+			.serviciosmyr-titulo-cont{
+				display : flex; 
+				flex-direction: column;
+
+				&_titulo{
+					display : flex; 
+					justify-content: center;
+
+					&_color{
+						color : $Colortitulonegro;
+					}
+				}
+
+				&_span{
+					display : flex; 
+					justify-content : center;
+				}
+			}
+		}
+
+		.serviciosmyr-info{
+			display : flex; 
+			justify-content : space-between;
+			margin-top : 30px;
+
+			.serviciosmyr-info-cont{
+				display : flex; 
+				flex-direction: column;
+
+				&_serv{
+					display : flex; 
+					flex-direction : column;
+
+					&_img{
+						display : flex; 
+						justify-content: center;
+						margin-bottom : 10px;
+						height : 100px;//Nuevo agregado
+						padding : 5px;
+						//width : 50%;
+					}
+
+					&_continfo{
+						display : flex;
+						flex-direction : column;
+
+						&_titulo{
+							display: flex; 
+							justify-content: center;
+							margin-bottom : 10px; 
+
+							&_texto{
+								color: $Negrobgcolor;
+							}
+						}
+
+						&_desc{
+							display: flex; 
+							justify-content: center;
+							margin-bottom : 30px;
+
+							&_texto{
+								text-align: center;
+								color: $Negrobgcolor;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 620px){//620px
+	.serviciosmyr{
+		//height : 100vh;
+		background-color : $Grisbgcolor;
+
+		.serviciosmyr-cont{
+			display : flex; 
+			flex-direction: column;
+			margin-top: 85px;
+			margin-bottom : 100px;
+
+			.serviciosmyr-titulo{
+				display : flex;
+				flex-direction: column;
+
+				.serviciosmyr-titulo-cont{
+					display : flex; 
+					flex-direction: column;
+
+					&_titulo{
+						display : flex; 
+						justify-content: center;
+
+						&_color{
+							color : $Colortitulonegro;
+							font-size: 1em;
+						}
+					}
+
+					&_span{
+						display : flex; 
+						justify-content : center;
+					}
+				}
+			}
+
+			.serviciosmyr-info{
+				display : flex; 
+				flex-direction: column;
+				margin-top : 30px;
+				margin-left : 30px;
+
+				.serviciosmyr-info-cont{
+					display : flex; 
+					flex-direction: column;
+
+					&_serv{
+						display : flex; 
+						flex-direction : row;
+
+						&_img{
+							display : flex; 
+							justify-content: center;
+							margin-bottom : 0px;
+							width : 100px;
+							padding : 10px;
+						}
+
+						&_continfo{
+							display : flex;
+							flex-direction : column;
+							padding : 25px;
+
+							&_titulo{
+								display: flex; 
+								justify-content: flex-start;
+								padding-top : 18px;
+								margin-bottom : 0px; 
+
+								&_texto{
+									color: $Negrobgcolor;
+								}
+							}
+
+							&_desc{
+								display: flex; 
+								justify-content: flex-start;
+								margin-bottom : 0px;
+
+								&_texto{
+									text-align: left;
+									color: $Negrobgcolor;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

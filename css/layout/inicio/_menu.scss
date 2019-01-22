@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?6s6d3k');
+    src:    url('../fonts/icomoon.eot?6s6d3k#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?6s6d3k') format('truetype'),
+        url('../fonts/icomoon.woff?6s6d3k') format('woff'),
+        url('../fonts/icomoon.svg?6s6d3k#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+    content: "\e900";
+}
+.icon-phone:before {
+    content: "\e901";
+}
+.icon-menu:before {
+    content: "\e902";
+}
+.icon-close:before {
+    content: "\e903";
+}
+
+.topBar{
+	height           : 66px;
+	display          : flex;
+	align-items      : center;
+	background-color : $Colorblanco;//$Negrobgcolor;
+	//position         : -webkit-sticky;
+	position         : fixed;//Se posiciona a la ventana del navegador de manera relativa, esto es que se mantendra en el mismo lugar cuando se usa scroll
+	top              : 0;//Posiciona al elemento en la parte superior de la ventana
+	z-index          : 1000;//Sobrepone al elemento sobre todos los elementos de la pagina
+	width            : 100%;//Le damos el 100% de la pantalla al elemento
+
+	.menu_bar{
+		display : none;
+	}
+
+	.cont-catalogo{
+		width : 100%;
+		height: 200px;
+		background: blue;
+		position: absolute;
+		left: 0;
+		margin-top: 133px;
+		//display: none;
+	}
+
+	.cont-menu{
+		display         : flex;
+		justify-content : space-between;
+
+		.cont-menu_logo{
+			display : flex;
+			align-items: center;
+			width : 200px;
+
+		}
+
+		.cont-menu_menu{
+			.menu-ul{
+				display        : flex; 
+				flex-direction : row;
+				list-style     : none; 
+
+				.menu-ul_li{
+					//margin-top : 24px;
+					display: flex;
+					align-items: center;
+					list-style     : none;
+
+					&_a{
+						color      : $Colornegro;//$Colorletras;
+						font-size  : 1.1vw;//16px;
+						transition : all 0.7s ease;
+						padding    : 20px;
+
+						&:hover{
+							border-radius    : 1px;//4px;
+							background-color : $Colornegro;//$Blancohovermenu;
+							color            : $Coloramarillo;//$ColorAzulInst;
+							font-weight: $bold;
+						}
+					}
+
+					/*nuevo agregado */
+					&_sub{
+						display: none;//block;
+						flex-wrap: wrap;
+						justify-content: center;
+						//flex-direction: row;
+						position: absolute;
+						top: 60px;
+						background: $Colorgris;
+						color: #fff;
+						padding: 5px 0px 5px 5px;
+						margin: 0;
+						width: 100%;
+						right: 0;
+
+						&_opcion{
+							display: flex; 
+							flex-direction: column;
+							align-items: center;
+							float: left;
+							color: #fff;
+							width: 20%;
+							margin: 2% 0%;
+							transition : all 0.7s ease;
+							margin: 10px;
+							padding: 10px;
+							border-radius: 5px;
+
+							&:hover{
+								background-color: rgb(202, 207, 210);
+							}
+						}
+
+						&_opcion a{
+							display: flex;
+							flex-direction: column;
+							text-align: center;
+							color: black;
+							font-size: 1.1vw;
+						}
+
+						&_opcion a img{
+							margin-top: 10px;
+						}
+					}
+
+				}
+
+				& .catalogo:hover{
+					.menu-ul_li_sub{
+						display: flex;
+						cursor: pointer;
+					}
+				}
+			}
+		}	
+	}
+}
+
+@media (max-width : $tabletas){
+	.topBar{
+		//position         : fixed;//Se posiciona a la ventana del navegador de manera relativa, esto es que se mantendra en el mismo lugar cuando se usa scroll
+		//top              : 0;//Posiciona al elemento en la parte superior de la ventana
+		.menu_bar{
+			display: flex;
+			justify-content : center;
+			padding: 0px;
+
+			.cont-menu_logo{
+				display: flex; 
+				align-items: center;
+				width : 200px;//100px;
+				height: 66px;
+			}
+
+			.cont-menu_menu{
+				.btn_menu{
+					padding: 10px;
+					font-size: 18px;
+					color : $Colorblanco;
+					transition: all 0.7s ease;
+					position : absolute;
+					left : 0px;//28px;
+					top : 14px;
+					background-color : $Colornegro;
+					border-radius : 50%;
+					cursor: pointer;
+
+					&:hover{
+						color: $Colornegro;
+						background-color : $Colorblanco;
+					}
+				}
+			}
+		}
+
+		.cont-menu{
+			display : block;
+			width : 100%;//40%
+			height: calc(100% - 66px);
+			position : fixed;
+			right: 100%;
+			margin: 0; 
+			background-color: $Blancomenuresp;//$Negromenuresp;
+			//overflow: scroll;
+
+			.cont-menu_logo{
+				display: none;
+			}
+
+			.cont-menu_menu{
+				margin-top: 50px;
+				.menu-ul{
+					display: flex; 
+					flex-direction: column;
+					list-style : none; 
+
+					.menu-ul_li{
+						display : flex;
+						justify-content : center;
+						margin-top: 0px;
+						border-bottom : 1px solid rgba(255,255,255,.5);
+						transition: all 0.7s ease;
+
+						&_a{
+							color : $Colornegro;
+							font-size: 18px;
+							transition: all 0.7s ease;
+							padding: 30px;
+							display: block;
+							font-weight: $bold;
+
+							&:hover{
+								border-radius: 0px;
+								background-color : inherit;
+								color : $Coloramarillo;
+							}
+						}
+
+						&:hover{
+							border-radius: 4px;
+							background-color : $Colornegro;//$Colorblanco;//$Blancohovermenu;
+							color : $Coloramarillo;
+						}
+					}
+
+					& .catalogo:hover{
+						.menu-ul_li_sub{
+							display: none;
+							cursor: pointer;
+						}
+					}
+				}
+			}	
+		}
+	}
+}

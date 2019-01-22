@@ -1,0 +1,68 @@
+.cont-misvi{
+	display : flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 40px;
+
+	&_contenedor{
+		display: flex;
+		flex-direction: row;
+		margin : 10px;
+		transition: 0.9s;
+
+		border-radius: 5px;
+    	padding: 10px;
+    	
+		&_img{
+			margin-top: 25px;
+			width: 20%;
+			text-align: center;
+
+			&_size{
+				width: 45%;
+				border-radius: 50%;
+				box-shadow: 0px 0px 40px -8px $Colorrojo;
+			}
+		}
+
+		&_info{
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			margin-top: 20px;
+			width: 90%;
+
+			&_texto{
+				padding: 5px;
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tabletas){
+	.cont-misvi{
+		&_contenedor{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&_img{
+				margin-top: 25px;
+				width: 100%;
+				&_size{
+					width: 30%;
+					border-radius: 50%;
+					box-shadow: 0px 0px 40px -8px $Colorrojo;
+				}
+			}
+			&_info{
+				display: flex;
+				align-items: center;
+				&_texto{
+					font-size: $TamanoLetrasRes;
+					text-align: justify;
+				}
+			}
+		}
+	}
+}

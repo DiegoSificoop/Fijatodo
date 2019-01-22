@@ -1,0 +1,458 @@
+.contacto{
+	//margin-top: 70px;
+	background-color: $Colornegro;
+
+	.cont_contacto{
+		display : flex;
+		justify-content: space-between;
+		margin-top: 35px;
+		margin-bottom: 20px;
+
+		&_elementos{
+			/*display: flex;
+			flex-direction: column;
+			align-items: center;*/
+
+			&_redes{
+				display: flex; 
+				flex-direction: row;
+				margin : 10px;
+
+				&_icono{
+					margin : 5px;
+					color : $Colorgris;
+					font-size: 50px;
+
+					&:hover{
+						color : $Coloramarillo;
+					}
+				}
+			}
+
+			&_datos{
+				display : flex;
+				flex-direction: column;
+				margin : 10px;
+
+
+				&_items{
+					display: flex; 
+					flex-direction: row;
+					margin: 5px;
+
+					&_icono{
+						font-size: 25px;
+						margin-right: 10px;
+						color : $Colorgris;
+					}
+
+					&_descripcion{
+						display: flex;
+						align-items: center;
+						font-size: 15px;
+						color : $Colorgris;
+					}	
+				}
+			}
+		}
+		&_form{
+			display : flex; 
+			flex-direction : column;
+			width : 50%;
+
+			&_titulo{
+				color : $Colorgris;
+				font-size: 16px;
+			}
+
+			&_input{
+				width : 100%;
+		    	padding: 6px 10px;
+		    	margin: 3px 0;
+		    	display: inline-block;
+		    	border: 1px solid #ccc;
+		    	border-radius: 4px;
+		    	box-sizing: border-box;
+			}
+
+			&_boton{
+				width : 50%;
+				background-color: $Colorgris;
+			    color: $Colornegro;
+			    padding: 6px 10px;
+			    margin: 3px 0;
+			    border: none;
+			    border-radius: 4px;
+			    cursor: pointer;
+			    transition : all 0.7s ease;
+
+			    &:hover{
+			    	background-color : $Coloramarillo;
+				    //color : $Colornegro;
+			    }
+			}
+		}
+
+		&_derechos{
+			display: flex;
+			justify-content: center;
+			//margin-top : 16px;
+			padding : 5px;
+
+			&_texto{
+				color : $Colorgris;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px){
+	.contacto{
+		//margin-top: 70px;
+		//background-color: $Colorgris;
+
+		.cont_contacto{
+			display : flex;
+			flex-direction: column;
+			margin-top: 35px;//
+			margin-bottom: 20px;
+
+			&_elementos{
+				/*display: flex;
+				flex-direction: column;
+				align-items: center;*/
+
+				&_redes{
+					/*display: flex; 
+					flex-direction: row;
+					margin : 10px;*/
+
+					&_icono{
+						/*margin : 5px;
+						color : $Colornegro;*/
+						font-size: 35px;
+
+						&:hover{
+							//color : blue;
+						}
+					}
+				}
+
+				&_datos{
+					/*display : flex;
+					flex-direction: column;
+					margin : 10px;*/
+
+
+					&_items{
+						/*display: flex; 
+						flex-direction: row;*/
+
+						&_icono{
+							font-size: 20px;
+							/*font-size: 25px;
+							margin-right: 10px;*/
+						}
+
+						&_descripcion{
+							font-size: 13px;
+							/*display: flex;
+							align-items: center;
+							font-size: 15px;*/
+						}
+					}
+				}
+			}
+			&_form{
+				/*display : flex; 
+				flex-direction : column;*/
+				width : 100%;
+				margin-top: 25px;//
+				text-align: center;//
+
+				&_titulo{
+					/*color : $Colornegro;
+					font-size: 16px;*/
+				}
+
+				&_input{
+					/*width : 100%;
+			    	padding: 6px 10px;
+			    	margin: 3px 0;
+			    	display: inline-block;
+			    	border: 1px solid #ccc;
+			    	border-radius: 4px;
+			    	box-sizing: border-box;*/
+				}
+
+				&_boton{
+					width : 100%;
+					/*background-color: blue;
+				    color: $Colorblanco;
+				    padding: 6px 10px;
+				    margin: 3px 0;
+				    border: none;
+				    border-radius: 4px;
+				    cursor: pointer;
+				    transition : all 0.7s ease;*/
+
+				    &:hover{
+				    	/*background-color : $Colorblanco;
+					    color : blue;*/
+				    }
+				}
+			}
+		}
+	}
+}
+
+/*.contacto{
+	background-color : $Grisbgcolor;
+
+	.contacto-cont{
+		display: flex; 
+		flex-direction: column;
+		margin-top: 10px;
+
+		.contacto-cont_info{
+			display: flex; 
+			justify-content: space-between;
+
+			&_redes{
+				display: flex;
+				flex-direction: column;
+				width : 50%;
+
+				&_sociales{
+					display: flex; 
+					justify-content: space-between;
+
+					&_siguenos{
+						display: flex;
+						flex-direction: column;
+
+						&_color{
+							color : $Negrobgcolor;
+							font-size: 16px;
+						}
+
+						&_estilo{
+							margin : 5px;
+							color : $Negrobgcolor;
+							font-size: 16px;
+
+							&:hover{
+								color : $ColorAzulInst;
+							}
+						}
+					}
+
+					&_contactanos{
+						display: flex; 
+						flex-direction: column;
+						width : 50%;
+
+						&_color{
+							color : $Negrobgcolor;
+							font-size: 16px;
+						}
+
+						&_estilo{
+							margin : 5px;
+							color : $Negrobgcolor;
+							font-size: 16px;
+						}
+					}
+				}
+
+				&_visitanos{
+					display: flex; 
+					flex-direction: column;
+					margin-top : 20px;
+
+					&_titulo{
+						color : $Negrobgcolor;
+						font-size: 16px;
+					}
+
+					&_icono{
+						margin : 5px;
+						color : $Negrobgcolor;
+						font-size: 16px;
+					}
+
+				}
+			}
+
+			&_form{
+				display : flex; 
+				flex-direction : column;
+				width : 50%;
+
+				&_titulo{
+					color : $Negrobgcolor;
+					font-size: 16px;
+				}
+
+				&_input{
+					width : 100%;
+			    	padding: 6px 10px;
+			    	margin: 3px 0;
+			    	display: inline-block;
+			    	border: 1px solid #ccc;
+			    	border-radius: 4px;
+			    	box-sizing: border-box;
+				}
+
+				&_boton{
+					width : 50%;
+					background-color: $ColorAzulInst;
+				    color: white;
+				    padding: 6px 10px;
+				    margin: 3px 0;
+				    border: none;
+				    border-radius: 4px;
+				    cursor: pointer;
+				    transition : all 0.7s ease;
+
+				    &:hover{
+				    	background-color : $Blancobgcolor;
+					    color : $ColorAzulInst;
+				    }
+				}
+			}
+		}
+
+		.contacto-cont_derechos{
+			display: flex;
+			justify-content: center;
+			//margin-top : 16px;
+			padding : 5px;
+
+			&_texto{
+				color : $Negrobgcolor;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media (max-width : 620px){
+	.contacto{
+
+		.contacto-cont{
+			display: flex; 
+			flex-direction: column;
+			margin-top: 10px;
+
+			.contacto-cont_info{
+				display: flex; 
+				flex-direction: column;
+				//justify-content: space-between;
+
+				&_redes{
+					display: flex;
+					//flex-direction: row;
+					flex-direction: column;
+					width: 100%;
+					padding : 10px;
+
+					&_sociales{
+						display: flex; 
+						justify-content: space-between;
+
+						&_siguenos{
+							display: flex;
+							flex-direction: column;
+
+							&_color{
+								color : $Negrobgcolor;
+								font-size: 16px;
+							}
+
+							&_estilo{
+								margin : 5px;
+								color : $Negrobgcolor;
+								font-size: 16px;
+
+								&:hover{
+									color : $ColorAzulInst;
+								}
+							}
+						}
+
+						&_contactanos{
+							display: flex; 
+							flex-direction: column;
+							width : 65%;
+
+							&_color{
+								color : $Negrobgcolor;
+								font-size: 16px;
+							}
+
+							&_estilo{
+								margin : 5px;
+								color : $Negrobgcolor;
+								font-size: 16px;
+							}
+						}
+					}
+
+					&_visitanos{
+						display: flex; 
+						flex-direction: column;
+						margin-top : 15px;
+
+						&_titulo{
+							color : $Negrobgcolor;
+							font-size: 16px;
+						}
+
+						&_icono{
+							margin : 5px;
+							color : $Negrobgcolor;
+							font-size: 16px;
+						}
+
+					}
+				}
+
+				&_form{
+					//display : none;
+					display: flex;
+					flex-direction : column;
+					padding : 10px;//10px;
+					width : 100%;
+
+					&_titulo{
+						color : $Negrobgcolor;
+						font-size: 16px;
+					}
+
+					&_input{
+						width : 100%;
+				    	padding: 6px 10px;
+				    	margin: 3px 0;
+				    	display: inline-block;
+				    	border: 1px solid #ccc;
+				    	border-radius: 4px;
+				    	box-sizing: border-box;
+					}
+
+					&_boton{
+						width : 100%;
+						background-color: $ColorAzulInst;
+					    color: white;
+					    padding: 6px 10px;
+					    margin: 3px 0;
+					    border: none;
+					    border-radius: 4px;
+					    cursor: pointer;
+					}
+				}
+			}
+		}
+	}	
+}*/
