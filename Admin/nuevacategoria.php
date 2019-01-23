@@ -40,6 +40,13 @@
 						<input type="text" name="">
 					</div>
 					<div class="cont-form_formulario_datos">
+						<span>Seleccione una categoria</span>
+						<select name="retiro" id="Selectretiro" class="cuadrosT">
+							<option selected="selected">Elija una categoria</option>
+							<option value="1">Opciones</option>
+						</select>
+					</div>
+					<div class="cont-form_formulario_datos">
 						<span>Elige una imágen</span>
 						<input type="file" name="">
 					</div>
@@ -62,6 +69,13 @@
 						<input type="text" name="">
 					</div>
 					<div class="cont-form_formulario_datos">
+						<span>Seleccione una subcategoria</span>
+						<select name="retiro" id="Selectretiro" class="cuadrosT">
+							<option selected="selected">Elija una subcategoria</option>
+							<option value="1">Opciones</option>
+						</select>
+					</div>
+					<div class="cont-form_formulario_datos">
 						<span>Elige una imágen</span>
 						<input type="file" name="">
 					</div>
@@ -82,6 +96,13 @@
 					<div class="cont-form_formulario_datos">
 						<span>Ingresa sub tipo de articulo</span>
 						<input type="text" name="">
+					</div>
+					<div class="cont-form_formulario_datos">
+						<span>Seleccione un tipo de artículo</span>
+						<select name="retiro" id="Selectretiro" class="cuadrosT">
+							<option selected="selected">Elija un tipo de artículo</option>
+							<option value="1">Opciones</option>
+						</select>
 					</div>
 					<div class="cont-form_formulario_datos">
 						<span>Elige una imágen</span>
