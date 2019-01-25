@@ -12,8 +12,8 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			width: 46%;//550px;
-			margin: 10px;
+			width: 29%;//46%;
+			margin: 17px;//10px
 			//border-radius: 10px;
 			overflow: hidden;
 			position: relative;
@@ -35,13 +35,13 @@
 				align-items: center;
 				background-color: $Colornegro;
 				position: absolute;
-				font-size: 24px;
+				font-size: 18px;
 				color: $Colorblanco;
 				bottom: 0;
 				width: 100%;
 				height: 35px;
+				text-align: center;
 			}
-
 		}
 	}
 }
@@ -86,7 +86,7 @@
 					align-items: center;
 					background-color: $Colornegro;
 					position: absolute;
-					font-size: 18px;
+					font-size: 15px;
 					color: $Colorblanco;
 					bottom: 0;
 					width: 100%;

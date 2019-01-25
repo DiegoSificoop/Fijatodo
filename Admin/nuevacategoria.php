@@ -115,5 +115,34 @@
 			</div>
 		</div>
 	</section>
+	<section class="m-section">
+		<div class="m-center">
+			<div class="cont-form">
+				<div class="cont-form_titulo">
+					
+				</div>
+				<div class="cont-form_formulario">
+					<div class="cont-form_formulario_datos">
+						<span>Ingresa sub tipo de articulo</span>
+						<input type="text" name="">
+					</div>
+					<div class="cont-form_formulario_datos">
+						<span>Seleccione un tipo de artículo</span>
+						<select name="retiro" id="Selectretiro" class="cuadrosT">
+							<option selected="selected">Elija un tipo de artículo</option>
+							<option value="1">Opciones mostrar</option>
+						</select>
+					</div>
+					<div class="cont-form_formulario_datos">
+						<span>Elige una imágen</span>
+						<input type="file" name="">
+					</div>
+					<div class="cont-form_formulario_boton">
+						<input type="submit" name="" value="Registrar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
