@@ -123,14 +123,14 @@
 				</div>
 				<div class="cont-form_formulario">
 					<div class="cont-form_formulario_datos">
-						<span>Ingresa sub tipo de articulo</span>
+						<span>Ingresa nombre de articulo</span>
 						<input type="text" name="">
 					</div>
 					<div class="cont-form_formulario_datos">
-						<span>Seleccione un tipo de artículo</span>
+						<span>Seleccione un sub tipo de artículo</span>
 						<select name="retiro" id="Selectretiro" class="cuadrosT">
-							<option selected="selected">Elija un tipo de artículo</option>
-							<option value="1">Opciones mostrar</option>
+							<option selected="selected">Elija un sub tipo de artículo</option>
+							<option value="1">Opciones</option>
 						</select>
 					</div>
 					<div class="cont-form_formulario_datos">
@@ -144,5 +144,6 @@
 			</div>
 		</div>
 	</section>
+	
 </body>
 </html>

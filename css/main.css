@@ -136,13 +136,13 @@ h6 {
   padding: 1.5rem 0 0; }
 
 .m_lineBottom_rojo {
-  border-bottom: 4px solid #f73859;
+  border-bottom: 4px solid #EC1A23;
   display: inline-block;
   width: 150px;
   padding: 1.5rem 0 0; }
 
 .m_lineBottom_amarillo {
-  border-bottom: 4px solid #ffcb2f;
+  border-bottom: 4px solid #FCD137;
   display: inline-block;
   width: 150px;
   padding: 1.5rem 0 0; }
@@ -2648,7 +2648,7 @@ h6 {
           .topBar .cont-menu .cont-menu_menu .menu-ul .menu-ul_li_a:hover {
             border-radius: 1px;
             background-color: #232931;
-            color: #ffcb2f;
+            color: #FCD137;
             font-weight: 700; }
         .topBar .cont-menu .cont-menu_menu .menu-ul .menu-ul_li_sub {
           display: none;
@@ -2656,7 +2656,7 @@ h6 {
           justify-content: center;
           position: absolute;
           top: 60px;
-          background: #ededed;
+          background: #fafafa;
           color: #fff;
           padding: 5px 0px 5px 5px;
           margin: 0;
@@ -2744,11 +2744,11 @@ h6 {
             .topBar .cont-menu .cont-menu_menu .menu-ul .menu-ul_li_a:hover {
               border-radius: 0px;
               background-color: inherit;
-              color: #ffcb2f; }
+              color: #FCD137; }
           .topBar .cont-menu .cont-menu_menu .menu-ul .menu-ul_li:hover {
             border-radius: 4px;
             background-color: #232931;
-            color: #ffcb2f; }
+            color: #FCD137; }
         .topBar .cont-menu .cont-menu_menu .menu-ul .catalogo:hover .menu-ul_li_sub {
           display: none;
           cursor: pointer; } }
@@ -2776,7 +2776,7 @@ h6 {
   justify-content: center;
   height: 180px;
   margin-top: -3px;
-  background-color: #ededed; }
+  background-color: #fafafa; }
   .info .cont-info {
     display: flex;
     justify-content: center;
@@ -3087,10 +3087,10 @@ h6 {
         margin: 10px; }
         .contacto .cont_contacto_elementos_redes_icono {
           margin: 5px;
-          color: #ededed;
+          color: #fafafa;
           font-size: 50px; }
           .contacto .cont_contacto_elementos_redes_icono:hover {
-            color: #ffcb2f; }
+            color: #FCD137; }
       .contacto .cont_contacto_elementos_datos {
         display: flex;
         flex-direction: column;
@@ -3102,18 +3102,18 @@ h6 {
           .contacto .cont_contacto_elementos_datos_items_icono {
             font-size: 25px;
             margin-right: 10px;
-            color: #ededed; }
+            color: #fafafa; }
           .contacto .cont_contacto_elementos_datos_items_descripcion {
             display: flex;
             align-items: center;
             font-size: 15px;
-            color: #ededed; }
+            color: #fafafa; }
     .contacto .cont_contacto_form {
       display: flex;
       flex-direction: column;
       width: 50%; }
       .contacto .cont_contacto_form_titulo {
-        color: #ededed;
+        color: #fafafa;
         font-size: 16px; }
       .contacto .cont_contacto_form_input {
         width: 100%;
@@ -3125,7 +3125,7 @@ h6 {
         box-sizing: border-box; }
       .contacto .cont_contacto_form_boton {
         width: 50%;
-        background-color: #ededed;
+        background-color: #fafafa;
         color: #232931;
         padding: 6px 10px;
         margin: 3px 0;
@@ -3134,13 +3134,13 @@ h6 {
         cursor: pointer;
         transition: all 0.7s ease; }
         .contacto .cont_contacto_form_boton:hover {
-          background-color: #ffcb2f; }
+          background-color: #FCD137; }
     .contacto .cont_contacto_derechos {
       display: flex;
       justify-content: center;
       padding: 5px; }
       .contacto .cont_contacto_derechos_texto {
-        color: #ededed;
+        color: #fafafa;
         font-size: 12px; }
 
 @media screen and (max-width: 650px) {
@@ -3465,29 +3465,34 @@ h6 {
     width: 82px;
     border-radius: 50%; }
 
-.imagenprin {
-  background-image: url("../img/ferreteriagalvan.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 3px; }
+/*.imagenprin{
+	//height : 100vh;
+	background-image : url("../img/ferreteriagalvan.jpg");
+	background-attachment : fixed;
+	background-position : center center;
+	background-size : cover;//70% 55%;
+	//background-size : 30% 30%;//70% 55%;
+	background-repeat : no-repeat;
+	position : relative; 
+	z-index : 1;
+	margin-bottom : 3px;
+}
 
-.imagenprin::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(69, 93, 122, 0.8);
-  z-index: -1;
-  opacity: 0.9; }
-
+.imagenprin::after{
+	content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    //background:rgba(255,255,255,0.9);
+    background:rgba(69,93,122,0.8);//rgba(236,27,36,0.9);//$Colorrojo;
+    z-index:-1;
+    opacity : 0.9;
+}*/
 .principal {
-  margin-top: 80px; }
+  margin-top: 80px;
+  background-color: #5E5440; }
   .principal .principal-cont {
     display: flex;
     justify-content: flex-start; }
@@ -3518,7 +3523,7 @@ h6 {
         text-align: center; }
         .principal .principal-cont_info_boton a:hover {
           background-color: #232931;
-          color: #ffcb2f; }
+          color: #FCD137; }
 
 @media screen and (max-width: 880px) {
   .principal .principal-cont_info {
@@ -3546,7 +3551,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   z-index: -1;
   opacity: 0.9; }
 
@@ -3562,11 +3567,11 @@ h6 {
     .promocion-cont_info_encabezado {
       display: flex;
       justify-content: center;
-      color: #ededed; }
+      color: #fafafa; }
     .promocion-cont_info_puntos {
       display: flex;
       flex-direction: column;
-      color: #ededed;
+      color: #fafafa;
       margin-top: 18px; }
       .promocion-cont_info_puntos_opcion {
         display: flex;
@@ -3592,7 +3597,7 @@ h6 {
       margin-top: 20px; }
       .promocion-cont_info_boton:hover {
         background-color: #232931;
-        color: #ffcb2f; }
+        color: #FCD137; }
 
 @media screen and (max-width: 880px) {
   .promocion-cont {
@@ -3659,7 +3664,7 @@ h6 {
       .cont-misvi_contenedor_img_size {
         width: 45%;
         border-radius: 50%;
-        box-shadow: 0px 0px 40px -8px #f73859; }
+        box-shadow: 0px 0px 40px -8px #EC1A23; }
     .cont-misvi_contenedor_info {
       display: flex;
       justify-content: flex-start;
@@ -3681,7 +3686,7 @@ h6 {
       .cont-misvi_contenedor_img_size {
         width: 30%;
         border-radius: 50%;
-        box-shadow: 0px 0px 40px -8px #f73859; }
+        box-shadow: 0px 0px 40px -8px #EC1A23; }
     .cont-misvi_contenedor_info {
       display: flex;
       align-items: center; }
@@ -3824,7 +3829,7 @@ h6 {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      background-color: #ededed;
+      background-color: #fafafa;
       width: 60%;
       padding: 50px;
       border-radius: 10px; }
@@ -3839,7 +3844,7 @@ h6 {
         cursor: pointer;
         transition: all 0.7s ease; }
         .cont-login_contform_form_button:hover {
-          background-color: #ffcb2f;
+          background-color: #FCD137;
           color: #232931; }
     .cont-login_contform_form input {
       padding: 6px 10px;
@@ -3871,7 +3876,7 @@ h6 {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background-color: #ededed;
+        background-color: #fafafa;
         width: 100%;
         padding: 50px;
         border-radius: 10px; }
@@ -3886,7 +3891,7 @@ h6 {
           cursor: pointer;
           transition: all 0.7s ease; }
           .cont-login_contform_form_button:hover {
-            background-color: #ffcb2f;
+            background-color: #FCD137;
             color: #232931; }
       .cont-login_contform_form input {
         padding: 6px 10px;
@@ -4076,7 +4081,7 @@ h6 {
       margin-top: 15px; }
     .cont-form_formulario_boton input {
       width: 50%;
-      background-color: #ededed;
+      background-color: #fafafa;
       color: #232931;
       padding: 6px 10px;
       margin: 3px 0;
@@ -4085,7 +4090,7 @@ h6 {
       cursor: pointer;
       transition: all 0.7s ease; }
       .cont-form_formulario_boton input:hover {
-        background-color: #ffcb2f; }
+        background-color: #FCD137; }
 
 .cont-inicio {
   display: flex;
@@ -4135,7 +4140,7 @@ h6 {
 
 .boton {
   width: 50%;
-  background-color: #ededed;
+  background-color: #fafafa;
   color: #232931;
   padding: 6px 10px;
   margin: 3px 0;
@@ -4144,7 +4149,7 @@ h6 {
   cursor: pointer;
   transition: all 0.7s ease; }
   .boton:hover {
-    background-color: #ffcb2f; }
+    background-color: #FCD137; }
 
 .close {
   background: #606061;
@@ -4165,7 +4170,7 @@ h6 {
   box-shadow: 1px 1px 3px #000; }
 
 .close:hover {
-  background: #ffcb2f; }
+  background: #FCD137; }
 
 @media screen and (max-width: 880px) {
   .modalDialog > div p {

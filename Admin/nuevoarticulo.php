@@ -42,8 +42,11 @@
 						</select>
 					</div>
 					<div class="cont-form_formulario_datos">
-						<span>Ingrese el nombre del artículo</span>
-						<input type="text" name="">
+						<span>Seleccione un artículo</span>
+						<select name="retiro" id="Selectretiro" class="cuadrosT">
+							<option selected="selected">Elija un artículo</option>
+							<option value="1">Opciones</option>
+						</select>
 					</div>
 					<div class="cont-form_formulario_datos">
 						<span>Ingrese el nombre del subartículo</span>

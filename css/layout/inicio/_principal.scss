@@ -1,4 +1,4 @@
-.imagenprin{
+/*.imagenprin{
 	//height : 100vh;
 	background-image : url("../img/ferreteriagalvan.jpg");
 	background-attachment : fixed;
@@ -22,10 +22,11 @@
     background:rgba(69,93,122,0.8);//rgba(236,27,36,0.9);//$Colorrojo;
     z-index:-1;
     opacity : 0.9;
-}
+}*/
 
 .principal{
 	margin-top: 80px;
+	background-color: $Colorgriscafe;
 
 	.principal-cont{
 		display: flex; 
