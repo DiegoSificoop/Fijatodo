@@ -147,110 +147,12 @@ h6 {
   width: 150px;
   padding: 1.5rem 0 0; }
 
- /*Modulo para letras de encabezados negros
-.conteneg-titulo{
-    display : flex;
-    flex-direction: column;
+.m_lineBottom_blanco {
+  border-bottom: 4px solid white;
+  display: inline-block;
+  width: 150px;
+  padding: 1.5rem 0 0; }
 
-    .conteneg-titulo-cont{
-        display : flex; 
-        flex-direction: column;
-
-        &_titulo{
-            display : flex; 
-            justify-content: center;
-
-            &_color{
-                color : $Colortitulonegro;
-            }
-        }
-
-        &_span{
-            display : flex; 
-            justify-content : center;
-        }
-    }
-}
-
-@media (max-width : $moviles){
-    .conteneg-titulo{
-        display : flex;
-        flex-direction: column;
-
-        .conteneg-titulo-cont{
-            display : flex; 
-            flex-direction: column;
-
-            &_titulo{
-                display : flex; 
-                justify-content: center;
-
-                &_color{
-                    color : $Colortitulonegro;
-                    font-size: 1.5em;
-                    text-align : center;
-                }
-            }
-
-            &_span{
-                display : flex; 
-                justify-content : center;
-            }
-        }
-    }
-}*/
-/*Modulo para letras de encabezados grises
-.contegris-titulo{
-    display : flex;
-    flex-direction: column;
-
-    .contegris-titulo-cont{
-        display : flex; 
-        flex-direction: column;
-
-        &_titulo{
-            display : flex; 
-            justify-content: center;
-
-            &_color{
-                color : $Colortitulogris;
-            }
-        }
-
-        &_span{
-            display : flex; 
-            justify-content : center;
-        }
-    }
-}
-
-@media (max-width : $moviles){
-    .contegris-titulo{
-        display : flex;
-        flex-direction: column;
-
-        .contegris-titulo-cont{
-            display : flex; 
-            flex-direction: column;
-
-            &_titulo{
-                display : flex; 
-                justify-content: center;
-
-                &_color{
-                    color : $Colortitulogris;
-                    font-size: 1.5em;
-                    text-align : center;
-                }
-            }
-
-            &_span{
-                display : flex; 
-                justify-content : center;
-            }
-        }
-    }
-}*/
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3946,6 +3848,57 @@ h6 {
     margin-top: 60px;
     text-align: center; }
 
+.politicas {
+  background-color: #fafafa;
+  margin-top: 60px; }
+  .politicas .cont-politicas {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .politicas .cont-politicas_imagen {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin: 15px; }
+    .politicas .cont-politicas_imagen img {
+      width: 100%; }
+    .politicas .cont-politicas_texto {
+      display: flex;
+      flex-direction: column;
+      color: #232931;
+      width: 50%;
+      margin: 15px; }
+      .politicas .cont-politicas_texto_titulo {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-size: 2.7vw; }
+      .politicas .cont-politicas_texto_descripcion {
+        text-align: left;
+        margin-top: 20px; }
+
+@media screen and (max-width: 880px) {
+  .politicas .cont-politicas {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px; }
+    .politicas .cont-politicas_imagen {
+      width: 100%; }
+    .politicas .cont-politicas_texto {
+      width: 100%;
+      margin: 8px; }
+      .politicas .cont-politicas_texto_titulo {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-size: 29px; }
+      .politicas .cont-politicas_texto_descripcion {
+        text-align: left;
+        margin-top: 20px; }
+      .politicas .cont-politicas_texto_descripcion p {
+        font-size: 14px; } }
 .modalDialog {
   position: fixed;
   top: 0;
