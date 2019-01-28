@@ -40,6 +40,10 @@
 			color: $Colorgris;
 		}
 
+		&_encabezado span{
+			font-size: $Tamanoletraprom;
+		}
+
 		&_puntos{
 			display: flex;
 			flex-direction: column;
@@ -61,6 +65,10 @@
 					font-size: 0.7vw;
 				}
 			}
+
+			&_opcion span{
+				font-size: $Tamanoletraprom;
+			}
 		}
 
 		&_boton {
@@ -75,6 +83,7 @@
 		    transition : all 0.7s ease;
 		    text-align: center;
 		    margin-top: 20px;
+		    font-size: $Tamanoletraprom;
 
 		    &:hover{
 		    	background-color : $Colornegro;
@@ -90,10 +99,14 @@
 		justify-content: flex-start;
 
 		&_info{
-			padding: 10px;
+			padding: 18px;//10px;
 			
 			&_encabezado{
 				
+			}
+
+			&_encabezado span{
+				font-size: $Tamanoletrapromres;
 			}
 
 			&_puntos{
@@ -110,9 +123,14 @@
 						
 					}
 				}
+
+				&_opcion span{
+					font-size: $Tamanoletrapromres;
+				}
 			}
 
 			&_boton {
+				font-size: $Tamanoletrapromres;
 
 			    &:hover{
 			    	

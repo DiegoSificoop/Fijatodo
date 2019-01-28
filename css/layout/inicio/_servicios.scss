@@ -37,6 +37,10 @@
 			margin: 68px;
 			text-align: center;
 			color: $Colornegro;
+
+			&_size{
+				font-size: $Tamanoletraser;
+			}
 		}
 
 		&_servicios{
@@ -53,23 +57,24 @@
 				align-items : center;
 				margin: 18px;
 				padding : 10px;
-				width : 30%;
+				width : 28%;
 				/*height: 30%;
 				background-color : $Colorgrisdif;
 				border-radius : 50%;//10px*/
 
 				&_img{
 					margin: 5px;
+					width: 30%;
 
 					&_size{
-						width: 110px;
+						width: 100%;//110px;
 					}
 				}
 
 				&_descripcion{
 					text-align: center;
 					color : $Colornegro;
-					font-size: 24px;
+					font-size: 1.6vw;//24px;
 				}
 			}
 		}
@@ -91,7 +96,7 @@
 				color: white;*/
 
 				&_size{
-					font-size: 1.5em;
+					font-size: $Tamanoletraserres;
 				}
 			}
 
@@ -120,7 +125,7 @@
 
 					&_descripcion{
 						text-align: center;
-						color : $Colorblanco;
+						color : $Colornegro;
 						font-size: 20px;
 					}
 				}
@@ -128,196 +133,3 @@
 		}
 	}
 }
-
-/*.servicios{
-	background-color : $Grisbgcolor;
-
-	.servicios-cont{
-		display : flex; 
-		flex-direction: column;
-		margin-top: 85px;
-		margin-bottom : 70px;
-
-		.servicios-info{
-			display : flex; 
-			flex-wrap : wrap;
-			margin-top : 30px;
-			align-items : center;
-
-			&_serv{
-				display : flex; 
-				flex-direction : column;
-				margin : 18px;
-				padding : 10px;
-				width : 30%;
-				transition : all 300ms;
-				border-radius : 10px;
-
-				&_img{
-					display : flex; 
-					justify-content: center;
-					margin-bottom : 10px;
-					height : 100px;
-					padding : 5px;
-
-					&_estilo{
-						border-radius : 50%;
-						box-shadow: 0px 0px 40px -8px black;
-					}
-				}
-
-				&_continfo{
-					display : flex;
-					flex-direction : column;
-
-					&_titulo{
-						display: flex; 
-						justify-content: center;
-						margin-bottom : 10px; 
-
-						&_texto{
-							color: $Negrobgcolor;
-						}
-					}
-
-					&_desc{
-						display: flex; 
-						justify-content: center;
-						margin-bottom : 30px;
-
-						&_texto{
-							text-align: center;
-							color: $Negrobgcolor;
-						}
-					}
-				}
-			}
-
-			&_serv:hover{
-				box-shadow: 0px 0px 40px -5px $ColorAzulInst;
-			}
-		}
-	}
-}
-
-@media (max-width : 1096px){//620px
-	.servicios{
-
-		.servicios-cont{
-
-			.servicios-info{
-				display : flex; 
-				flex-wrap : wrap;
-				margin-top : 30px;
-				align-items : center;
-
-				&_serv{
-					display : flex; 
-					flex-direction : column;
-					margin : 0px;
-					padding : 10px;
-					width : 50%;
-
-					&_img{
-						display : flex; 
-						justify-content: center;
-						margin-bottom : 10px;
-						height : 100px;//Nuevo agregado
-						padding : 5px;
-					}
-
-					&_continfo{
-						display : flex;
-						flex-direction : column;
-
-						&_titulo{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 10px; 
-
-							&_texto{
-								color: $Negrobgcolor;
-							}
-						}
-
-						&_desc{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 30px;
-
-							&_texto{
-								text-align: center;
-								color: $Negrobgcolor;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width : $moviles){
-	.servicios{
-		//height : 100vh;
-		background-color : $Grisbgcolor;
-
-		.servicios-cont{
-			display : flex; 
-			flex-direction: column;
-			margin-top: 85px;
-			margin-bottom : 70px;
-
-			.servicios-info{
-				display : flex; 
-				flex-wrap : wrap;
-				margin-top : 30px;
-				align-items : center;
-				padding : 3px;
-
-				&_serv{
-					display : flex; 
-					flex-direction : column;
-					margin : 0px;
-					padding : 10px;
-					width : 100%;
-
-					&_img{
-						display : flex; 
-						justify-content: center;
-						margin-bottom : 10px;
-						height : 100px;//Nuevo agregado
-						padding : 5px;
-					}
-
-					&_continfo{
-						display : flex;
-						flex-direction : column;
-
-						&_titulo{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 10px; 
-
-							&_texto{
-								color: $Negrobgcolor;
-							}
-						}
-
-						&_desc{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 30px;
-
-							&_texto{
-								text-align: center;
-								color: $Negrobgcolor;
-								font-size: 17px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}*/

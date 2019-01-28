@@ -2630,7 +2630,9 @@ h6 {
     .topBar .cont-menu .cont-menu_logo {
       display: flex;
       align-items: center;
-      width: 200px; }
+      width: 16%; }
+    .topBar .cont-menu .cont-menu_logo a img {
+      width: 100%; }
     .topBar .cont-menu .cont-menu_menu .menu-ul {
       display: flex;
       flex-direction: row;
@@ -2755,41 +2757,42 @@ h6 {
 .slogan {
   display: flex;
   justify-content: center;
-  height: 180px;
-  margin-top: -3px;
-  background-color: rgba(236, 27, 36, 0.9); }
+  height: 16vh;
+  margin-top: -3px; }
   .slogan .cont-slogan {
     display: flex;
     justify-content: center;
     align-items: center; }
     .slogan .cont-slogan h4 {
-      color: white;
-      text-align: center; }
+      color: rgba(236, 27, 36, 0.9);
+      text-align: center;
+      font-size: 2.4vw; }
 
 @media screen and (max-width: 480px) {
   .slogan .cont-slogan h4 {
-    color: white;
+    color: rgba(236, 27, 36, 0.9);
     text-align: center;
-    font-size: 1.5em; } }
+    font-size: 24px; } }
 .info {
   display: flex;
   justify-content: center;
-  height: 180px;
+  height: 16vh;
   margin-top: -3px;
-  background-color: #fafafa; }
+  background-color: #EDDC77; }
   .info .cont-info {
     display: flex;
     justify-content: center;
     align-items: center; }
     .info .cont-info h4 {
-      color: rgba(236, 27, 36, 0.9);
-      text-align: center; }
+      color: #232931;
+      text-align: center;
+      font-size: 2.4vw; }
 
 @media screen and (max-width: 480px) {
   .info .cont-info h4 {
-    color: rgba(236, 27, 36, 0.9);
+    color: #232931;
     text-align: center;
-    font-size: 1.5em; } }
+    font-size: 24px; } }
 .imagen {
   background-image: url("../img/Tornillos.jpg");
   background-attachment: fixed;
@@ -2820,6 +2823,8 @@ h6 {
       margin: 68px;
       text-align: center;
       color: #232931; }
+      .servicios .cont-servicio_encabezado_size {
+        font-size: 2.7vw; }
     .servicios .cont-servicio_servicios {
       display: flex;
       flex-wrap: wrap;
@@ -2833,18 +2838,19 @@ h6 {
         align-items: center;
         margin: 18px;
         padding: 10px;
-        width: 30%;
+        width: 28%;
         /*height: 30%;
         background-color : $Colorgrisdif;
         border-radius : 50%;//10px*/ }
         .servicios .cont-servicio_servicios_elementos_img {
-          margin: 5px; }
+          margin: 5px;
+          width: 30%; }
           .servicios .cont-servicio_servicios_elementos_img_size {
-            width: 110px; }
+            width: 100%; }
         .servicios .cont-servicio_servicios_elementos_descripcion {
           text-align: center;
           color: #232931;
-          font-size: 24px; }
+          font-size: 1.6vw; }
 
 @media screen and (max-width: 650px) {
   .servicios .cont-servicio {
@@ -2856,7 +2862,7 @@ h6 {
       text-align: center;
       color: white;*/ }
       .servicios .cont-servicio_encabezado_size {
-        font-size: 1.5em; }
+        font-size: 29px; }
     .servicios .cont-servicio_servicios {
       /*display: flex;
       flex-wrap: wrap;
@@ -2876,200 +2882,8 @@ h6 {
             width: 100px; }
         .servicios .cont-servicio_servicios_elementos_descripcion {
           text-align: center;
-          color: white;
+          color: #232931;
           font-size: 20px; } }
-/*.servicios{
-	background-color : $Grisbgcolor;
-
-	.servicios-cont{
-		display : flex; 
-		flex-direction: column;
-		margin-top: 85px;
-		margin-bottom : 70px;
-
-		.servicios-info{
-			display : flex; 
-			flex-wrap : wrap;
-			margin-top : 30px;
-			align-items : center;
-
-			&_serv{
-				display : flex; 
-				flex-direction : column;
-				margin : 18px;
-				padding : 10px;
-				width : 30%;
-				transition : all 300ms;
-				border-radius : 10px;
-
-				&_img{
-					display : flex; 
-					justify-content: center;
-					margin-bottom : 10px;
-					height : 100px;
-					padding : 5px;
-
-					&_estilo{
-						border-radius : 50%;
-						box-shadow: 0px 0px 40px -8px black;
-					}
-				}
-
-				&_continfo{
-					display : flex;
-					flex-direction : column;
-
-					&_titulo{
-						display: flex; 
-						justify-content: center;
-						margin-bottom : 10px; 
-
-						&_texto{
-							color: $Negrobgcolor;
-						}
-					}
-
-					&_desc{
-						display: flex; 
-						justify-content: center;
-						margin-bottom : 30px;
-
-						&_texto{
-							text-align: center;
-							color: $Negrobgcolor;
-						}
-					}
-				}
-			}
-
-			&_serv:hover{
-				box-shadow: 0px 0px 40px -5px $ColorAzulInst;
-			}
-		}
-	}
-}
-
-@media (max-width : 1096px){//620px
-	.servicios{
-
-		.servicios-cont{
-
-			.servicios-info{
-				display : flex; 
-				flex-wrap : wrap;
-				margin-top : 30px;
-				align-items : center;
-
-				&_serv{
-					display : flex; 
-					flex-direction : column;
-					margin : 0px;
-					padding : 10px;
-					width : 50%;
-
-					&_img{
-						display : flex; 
-						justify-content: center;
-						margin-bottom : 10px;
-						height : 100px;//Nuevo agregado
-						padding : 5px;
-					}
-
-					&_continfo{
-						display : flex;
-						flex-direction : column;
-
-						&_titulo{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 10px; 
-
-							&_texto{
-								color: $Negrobgcolor;
-							}
-						}
-
-						&_desc{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 30px;
-
-							&_texto{
-								text-align: center;
-								color: $Negrobgcolor;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width : $moviles){
-	.servicios{
-		//height : 100vh;
-		background-color : $Grisbgcolor;
-
-		.servicios-cont{
-			display : flex; 
-			flex-direction: column;
-			margin-top: 85px;
-			margin-bottom : 70px;
-
-			.servicios-info{
-				display : flex; 
-				flex-wrap : wrap;
-				margin-top : 30px;
-				align-items : center;
-				padding : 3px;
-
-				&_serv{
-					display : flex; 
-					flex-direction : column;
-					margin : 0px;
-					padding : 10px;
-					width : 100%;
-
-					&_img{
-						display : flex; 
-						justify-content: center;
-						margin-bottom : 10px;
-						height : 100px;//Nuevo agregado
-						padding : 5px;
-					}
-
-					&_continfo{
-						display : flex;
-						flex-direction : column;
-
-						&_titulo{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 10px; 
-
-							&_texto{
-								color: $Negrobgcolor;
-							}
-						}
-
-						&_desc{
-							display: flex; 
-							justify-content: center;
-							margin-bottom : 30px;
-
-							&_texto{
-								text-align: center;
-								color: $Negrobgcolor;
-								font-size: 17px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}*/
 .contacto {
   background-color: #232931; }
   .contacto .cont_contacto {
@@ -3100,13 +2914,13 @@ h6 {
           flex-direction: row;
           margin: 5px; }
           .contacto .cont_contacto_elementos_datos_items_icono {
-            font-size: 25px;
+            font-size: 1.5vw;
             margin-right: 10px;
             color: #fafafa; }
           .contacto .cont_contacto_elementos_datos_items_descripcion {
             display: flex;
             align-items: center;
-            font-size: 15px;
+            font-size: 1.2vw;
             color: #fafafa; }
     .contacto .cont_contacto_form {
       display: flex;
@@ -3114,7 +2928,7 @@ h6 {
       width: 50%; }
       .contacto .cont_contacto_form_titulo {
         color: #fafafa;
-        font-size: 16px; }
+        font-size: 1.2vw; }
       .contacto .cont_contacto_form_input {
         width: 100%;
         padding: 6px 10px;
@@ -3141,7 +2955,7 @@ h6 {
       padding: 5px; }
       .contacto .cont_contacto_derechos_texto {
         color: #fafafa;
-        font-size: 12px; }
+        font-size: 0.8vw; }
 
 @media screen and (max-width: 650px) {
   .contacto .cont_contacto {
@@ -3184,8 +2998,8 @@ h6 {
       margin-top: 25px;
       text-align: center; }
       .contacto .cont_contacto_form_titulo {
-        /*color : $Colornegro;
-        font-size: 16px;*/ }
+        /*color : $Colornegro;*/
+        font-size: 16px; }
       .contacto .cont_contacto_form_input {
         		/*width : 100%;
             	padding: 6px 10px;
@@ -3206,7 +3020,10 @@ h6 {
             transition : all 0.7s ease;*/ }
         .contacto .cont_contacto_form_boton:hover {
       	/*background-color : $Colorblanco;
-  	    color : blue;*/ } }
+  	    color : blue;*/ }
+    .contacto .cont_contacto_derechos_texto {
+      color: #fafafa;
+      font-size: 12px; } }
 /*.contacto{
 	background-color : $Grisbgcolor;
 
@@ -3520,7 +3337,8 @@ h6 {
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.7s ease;
-        text-align: center; }
+        text-align: center;
+        font-size: 1.3vw; }
         .principal .principal-cont_info_boton a:hover {
           background-color: #232931;
           color: #FCD137; }
@@ -3529,11 +3347,12 @@ h6 {
   .principal .principal-cont_info {
     width: 100%;
     padding: 0px;
-    margin: 60px; }
+    margin: 42px; }
     .principal .principal-cont_info_encabezado p {
       font-size: 18px; }
     .principal .principal-cont_info_boton a {
-      width: 100%; } }
+      width: 100%;
+      font-size: 17px; } }
 .imagenprom {
   background-image: url("../img/almacen.jpg");
   background-attachment: fixed;
@@ -3568,6 +3387,8 @@ h6 {
       display: flex;
       justify-content: center;
       color: #fafafa; }
+    .promocion-cont_info_encabezado span {
+      font-size: 1.5vw; }
     .promocion-cont_info_puntos {
       display: flex;
       flex-direction: column;
@@ -3583,6 +3404,8 @@ h6 {
           margin-right: 6px; }
         .promocion-cont_info_puntos_opcion_puntito i {
           font-size: 0.7vw; }
+      .promocion-cont_info_puntos_opcion span {
+        font-size: 1.5vw; }
     .promocion-cont_info_boton {
       width: 80%;
       background-color: white;
@@ -3594,7 +3417,8 @@ h6 {
       cursor: pointer;
       transition: all 0.7s ease;
       text-align: center;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-size: 1.5vw; }
       .promocion-cont_info_boton:hover {
         background-color: #232931;
         color: #FCD137; }
@@ -3604,7 +3428,13 @@ h6 {
     display: flex;
     justify-content: flex-start; }
     .promocion-cont_info {
-      padding: 10px; } }
+      padding: 18px; }
+      .promocion-cont_info_encabezado span {
+        font-size: 18px; }
+      .promocion-cont_info_puntos_opcion span {
+        font-size: 18px; }
+      .promocion-cont_info_boton {
+        font-size: 18px; } }
 .cont-imagenp {
   margin-top: 65px;
   height: 600px;

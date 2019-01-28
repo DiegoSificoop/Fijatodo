@@ -1,9 +1,9 @@
 .slogan{
 	display: flex;
 	justify-content: center;	
-	height: 180px;
+	height: 16vh;//180px;
 	margin-top: -3px;
-	background-color: $ColorRojoIns;
+	//background-color: $ColorRojoIns;
 
 	.cont-slogan{
 		display: flex;
@@ -11,8 +11,9 @@
 		align-items: center;
 		
 		& h4{
-			color : $Colorblanco;
+			color : $ColorRojoIns;//$Colorblanco;
 			text-align: center;
+			font-size: $Tamanoletraslo;
 		}
 	}		
 }
@@ -21,9 +22,9 @@
 	.slogan{
 		.cont-slogan{
 			& h4{
-				color : $Colorblanco;
+				color : $ColorRojoIns;
 				text-align: center;
-				font-size: 1.5em;
+				font-size: $Tamanoletraslores;//1.5em;
 			}
 		}		
 	}

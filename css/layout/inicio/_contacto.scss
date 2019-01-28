@@ -41,7 +41,7 @@
 					margin: 5px;
 
 					&_icono{
-						font-size: 25px;
+						font-size: 1.5vw;//25px;
 						margin-right: 10px;
 						color : $Colorgris;
 					}
@@ -49,7 +49,7 @@
 					&_descripcion{
 						display: flex;
 						align-items: center;
-						font-size: 15px;
+						font-size: 1.2vw;//15px;
 						color : $Colorgris;
 					}	
 				}
@@ -62,7 +62,7 @@
 
 			&_titulo{
 				color : $Colorgris;
-				font-size: 16px;
+				font-size: 1.2vw;
 			}
 
 			&_input{
@@ -101,7 +101,7 @@
 
 			&_texto{
 				color : $Colorgris;
-				font-size: 12px;
+				font-size: 0.8vw;//12px;
 			}
 		}
 	}
@@ -172,8 +172,8 @@
 				text-align: center;//
 
 				&_titulo{
-					/*color : $Colornegro;
-					font-size: 16px;*/
+					/*color : $Colornegro;*/
+					font-size: 16px;
 				}
 
 				&_input{
@@ -201,6 +201,14 @@
 				    	/*background-color : $Colorblanco;
 					    color : blue;*/
 				    }
+				}
+			}
+
+			&_derechos{
+
+				&_texto{
+					color : $Colorgris;
+					font-size: 12px;
 				}
 			}
 		}

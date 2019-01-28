@@ -69,8 +69,12 @@
 		.cont-menu_logo{
 			display : flex;
 			align-items: center;
-			width : 200px;
+			width : 16%;//200px;
 
+		}
+
+		.cont-menu_logo a img{
+			width:100%;
 		}
 
 		.cont-menu_menu{

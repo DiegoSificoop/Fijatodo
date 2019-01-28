@@ -1,9 +1,9 @@
 .info{
 	display: flex;
 	justify-content: center;	
-	height: 180px;
+	height: 16vh;//180px;
 	margin-top: -3px;
-	background-color: $Colorgris;
+	background-color: $Colormostaza;
 
 	.cont-info{
 		display: flex;
@@ -11,8 +11,9 @@
 		align-items: center;
 		
 		& h4{
-			color : $ColorRojoIns;
+			color : $Colornegro;
 			text-align: center;
+			font-size: $Tamanoletraslo;
 		}
 	}		
 }
@@ -21,9 +22,9 @@
 	.info{
 		.cont-info{
 			& h4{
-				color : $ColorRojoIns;
+				color : $Colornegro;
 				text-align: center;
-				font-size: 1.5em;
+				font-size: $Tamanoletraslores;
 			}
 		}		
 	}

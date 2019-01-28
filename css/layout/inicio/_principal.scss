@@ -62,6 +62,7 @@
 			    cursor: pointer;
 			    transition : all 0.7s ease;
 			    text-align: center;
+			    font-size: 1.3vw;
 
 			    &:hover{
 			    	background-color : $Colornegro;
@@ -80,7 +81,7 @@
 			&_info{
 				width: 100%;//
 				padding: 0px;//
-				margin: 60px;//
+				margin: 42px;//60px;//
 
 				&_encabezado{
 		
@@ -96,6 +97,7 @@
 
 				&_boton a{
 					width : 100%;//
+					font-size: 17px;
 					
 				    &:hover{
 				    	
