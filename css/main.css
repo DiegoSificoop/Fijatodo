@@ -3883,9 +3883,11 @@ h6 {
   .politicas .cont-politicas {
     display: flex;
     flex-direction: column-reverse;
-    padding: 15px; }
+    padding: 5px; }
     .politicas .cont-politicas_imagen {
-      width: 100%; }
+      width: 100%;
+      margin: 0px;
+      margin-top: 15px; }
     .politicas .cont-politicas_texto {
       width: 100%;
       margin: 8px; }

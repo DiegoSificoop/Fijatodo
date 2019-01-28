@@ -49,10 +49,12 @@
 		.cont-politicas{
 			display: flex; 
 			flex-direction: column-reverse;
-			padding: 15px; 
+			padding: 5px; 
 
 			&_imagen{
 				width: 100%;
+				margin: 0px;
+				margin-top: 15px;
 			}
 
 			&_imagen img{
