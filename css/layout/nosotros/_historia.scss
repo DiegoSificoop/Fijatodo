@@ -1,26 +1,33 @@
-.cont-historia{
-	display: flex;
-	flex-direction: column;
+.historia{
+	margin-top: 28px;
+	background-color: $Colorblanco;
 
-	&_titulo{
-		margin-top: 20px;
-		padding: 20px;
-	}
+	.cont-historia{
+		display: flex;
+		flex-direction: column;
 
-	&_descripcion{
-		padding: 20px;
+		&_titulo{
+			margin-top: 20px;
+			padding: 20px;
+		}
+
+		&_descripcion{
+			padding: 20px;
+		}
 	}
 }
 
 @media screen and (max-width: $tabletas){
-	.cont-historia{
-		&_titulo h4{
-			font-size: $TamanoTitulosRes;
-		}
+	.historia{
+		.cont-historia{
+			&_titulo h4{
+				font-size: $TamanoTitulosRes;
+			}
 
-		&_descripcion p{
-			text-align: justify;
-			font-size: $TamanoLetrasRes;
+			&_descripcion p{
+				text-align: justify;
+				font-size: $TamanoLetrasRes;
+			}
 		}
 	}
 }

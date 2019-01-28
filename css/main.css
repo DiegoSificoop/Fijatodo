@@ -3460,120 +3460,131 @@ h6 {
     .cont-imagen_size {
       display: block;
       height: initial; } }
-.cont-historia {
-  display: flex;
-  flex-direction: column; }
-  .cont-historia_titulo {
-    margin-top: 20px;
-    padding: 20px; }
-  .cont-historia_descripcion {
-    padding: 20px; }
+.historia {
+  margin-top: 28px;
+  background-color: white; }
+  .historia .cont-historia {
+    display: flex;
+    flex-direction: column; }
+    .historia .cont-historia_titulo {
+      margin-top: 20px;
+      padding: 20px; }
+    .historia .cont-historia_descripcion {
+      padding: 20px; }
 
 @media screen and (max-width: 880px) {
-  .cont-historia_titulo h4 {
+  .historia .cont-historia_titulo h4 {
     font-size: 1.5em; }
-  .cont-historia_descripcion p {
+  .historia .cont-historia_descripcion p {
     text-align: justify;
     font-size: 15px; } }
-.cont-misvi {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 40px; }
-  .cont-misvi_contenedor {
+.misvi {
+  background-color: #232931;
+  margin-top: 28px; }
+  .misvi .cont-misvi {
     display: flex;
-    flex-direction: row;
-    margin: 10px;
-    transition: 0.9s;
-    border-radius: 5px;
-    padding: 10px; }
-    .cont-misvi_contenedor_img {
-      margin-top: 25px;
-      width: 20%;
-      text-align: center; }
-      .cont-misvi_contenedor_img_size {
-        width: 45%;
-        border-radius: 50%;
-        box-shadow: 0px 0px 40px -8px #EC1A23; }
-    .cont-misvi_contenedor_info {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px; }
+    .misvi .cont-misvi_contenedor {
       display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      margin-top: 20px;
-      width: 90%; }
-      .cont-misvi_contenedor_info_texto {
-        padding: 5px;
-        margin-top: 5px; }
+      flex-direction: row;
+      margin: 10px;
+      transition: 0.9s;
+      border-radius: 5px;
+      padding: 10px; }
+      .misvi .cont-misvi_contenedor_img {
+        margin-top: 25px;
+        width: 20%;
+        text-align: center; }
+        .misvi .cont-misvi_contenedor_img_size {
+          width: 45%;
+          border-radius: 50%;
+          box-shadow: 0px 0px 40px -8px #EC1A23; }
+      .misvi .cont-misvi_contenedor_info {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 90%;
+        color: #fafafa; }
+        .misvi .cont-misvi_contenedor_info_texto {
+          padding: 5px;
+          margin-top: 5px; }
 
 @media screen and (max-width: 880px) {
-  .cont-misvi_contenedor {
+  .misvi .cont-misvi_contenedor {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .cont-misvi_contenedor_img {
+    .misvi .cont-misvi_contenedor_img {
       margin-top: 25px;
       width: 100%; }
-      .cont-misvi_contenedor_img_size {
+      .misvi .cont-misvi_contenedor_img_size {
         width: 30%;
         border-radius: 50%;
         box-shadow: 0px 0px 40px -8px #EC1A23; }
-    .cont-misvi_contenedor_info {
+    .misvi .cont-misvi_contenedor_info {
       display: flex;
       align-items: center; }
-      .cont-misvi_contenedor_info_texto {
+      .misvi .cont-misvi_contenedor_info_texto {
         font-size: 15px;
         text-align: justify; } }
-.cont-valores {
-  margin-top: 60px;
-  margin-bottom: 40px; }
-  .cont-valores_titulo {
-    margin-top: 20px;
-    padding: 20px; }
-  .cont-valores_items {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    padding: 20px; }
-    .cont-valores_items_valor {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 30%;
+.valores {
+  background-color: white; }
+  .valores .cont-valores {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #D0D3D4; }
+    .valores .cont-valores_titulo {
       margin-top: 20px;
-      			/*&_contimg{
-      				width:100%;
-      				text-align: center;
-      
-      				&_img{
-      					width: 27%;
-      					border-radius: 50%;
-      					box-shadow: 0px 0px 40px 1px $Coloramarillo;
-      				}
-      			}*/ }
-      .cont-valores_items_valor_img {
-        width: 50%; }
-      .cont-valores_items_valor_descripcion {
+      padding: 20px; }
+    .valores .cont-valores_items {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding: 20px; }
+      .valores .cont-valores_items_valor {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
+        width: 30%;
         margin-top: 20px;
-        text-align: center; }
-        .cont-valores_items_valor_descripcion_texto {
-          padding: 5px;
-          margin-top: 8px; }
+        				/*&_contimg{
+        					width:100%;
+        					text-align: center;
+        
+        					&_img{
+        						width: 27%;
+        						border-radius: 50%;
+        						box-shadow: 0px 0px 40px 1px $Coloramarillo;
+        					}
+        				}*/ }
+        .valores .cont-valores_items_valor_img {
+          width: 50%; }
+        .valores .cont-valores_items_valor_descripcion {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 20px;
+          text-align: center; }
+          .valores .cont-valores_items_valor_descripcion_texto {
+            padding: 5px;
+            margin-top: 8px; }
 
 @media screen and (max-width: 880px) {
-  .cont-valores_titulo h4 {
+  .valores .cont-valores_titulo h4 {
     font-size: 1.5em; }
-  .cont-valores_items {
+  .valores .cont-valores_items {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .cont-valores_items_valor {
+    .valores .cont-valores_items_valor {
       width: 100%; }
-      .cont-valores_items_valor_descripcion_texto {
+      .valores .cont-valores_items_valor_descripcion_texto {
         font-size: 15px; } }
 .catalogos {
   margin-top: 80px;

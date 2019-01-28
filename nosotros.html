@@ -4,9 +4,10 @@
 	<meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0"/>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Nosotros | Fija-Todo</title>
 </head>
-<body style="background-color: rgb(244, 246, 247);">
+<body>
 	<section class="m-section topBar" id="menu">
       <div class="m-center">
         <div class="menu_bar">
@@ -42,9 +43,9 @@
     	</div>
     </section>-->
 
-    <section class="m-section">
+    <section class="m-section historia">
     	<div class="m-center">
-    		<div class="cont-historia">
+    		<div class="cont-historia" data-aos="fade-right" data-aos-duration="2000">
     			<div class="cont-historia_titulo">
     				<h4>Nuestra historia</h4>
     				<span class="m_lineBottom_negro"></span>
@@ -63,10 +64,10 @@
     	</div>
     </section>
 
-    <section class="m-section">
+    <section class="m-section misvi">
     	<div class="m-center">
            <div class="cont-misvi">
-                <div class="cont-misvi_contenedor">
+                <div class="cont-misvi_contenedor" data-aos="fade-left" data-aos-duration="2000">
                     <div class="cont-misvi_contenedor_img">
                         <img src="img/iconos/telemarketer.png" class="cont-misvi_contenedor_img_size">
                     </div>
@@ -78,7 +79,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="cont-misvi_contenedor">
+                <div class="cont-misvi_contenedor" data-aos="fade-right" data-aos-duration="2000">
                     <div class="cont-misvi_contenedor_img">
                         <img src="img/iconos/telemarketer.png" class="cont-misvi_contenedor_img_size">
                     </div>
@@ -94,14 +95,14 @@
     	</div>
     </section>
 
-    <section class="m-section">
+    <section class="m-section valores">
     	<div class="m-center">
     		<div class="cont-valores">
     			<div class="cont-valores_titulo">
     				<h4>Nuestros valores</h4>
     				<span class="m_lineBottom_negro"></span>
     			</div>
-    			<div class="cont-valores_items">
+    			<div class="cont-valores_items" data-aos="zoom-in-up" data-aos-duration="1000">
     				<div class="cont-valores_items_valor">
                         <!--<div class="cont-valores_items_valor_contimg">
                             <img src="img/iconos/inventario.png" class="cont-valores_items_valor_contimg_img">
@@ -181,5 +182,9 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script src="js/jquery/dist/jquery.min.js"></script>
     <script src="js/newmenu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
 </body>
 </html>
