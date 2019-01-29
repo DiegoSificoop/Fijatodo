@@ -43,6 +43,39 @@
 				text-align: center;
 			}
 		}
+
+		&_opciona{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 29%;//46%;
+			margin: 17px;//10px
+			//border-radius: 10px;
+			//overflow: hidden;
+			//position: relative;
+
+			& span{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $Colornegro;
+				//position: absolute;
+				font-size: 18px;
+				color: $Colorblanco;
+				bottom: 0;
+				width: 100%;
+				height: 18vh;
+				text-align: center;
+				cursor: pointer;
+			    transition : all 0.7s ease;
+
+				&:hover{
+					color: $Coloramarillo;
+					background-color: $Colornegro;
+			    }
+			}
+		}
 	}
 }
 
@@ -93,6 +126,18 @@
 					height: 35px;
 				}
 
+			}
+
+			&_opciona{
+				width: 100%;
+				
+				& span{
+					font-size: 14px;
+
+					&:hover{
+						
+				    }
+				}
 			}
 		}
 	}
