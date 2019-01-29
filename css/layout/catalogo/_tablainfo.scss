@@ -1,0 +1,113 @@
+.informacion{
+
+	.cont-informacion{
+		display: flex; 
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+
+		&_titulo{
+			text-align: center;
+			font-size: 1.6vw;
+			margin-bottom: 40px;
+		}
+
+		&_titulo span{
+			font-weight: 800;
+		}
+
+		&_imagen{
+			display: flex; 
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		&_imagen img{
+			width: 50%;
+		}
+
+		&_tabla{
+			overflow-x: auto;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		&_tabla caption{
+			background-color: #34495E;
+			color: $Colorblanco;
+			padding: 0.3em;
+		}
+
+		&_tabla table{
+			width : 100%;
+			//margin-top: 13px;
+		}
+
+		&_tabla th{
+			background-color: #34495E;
+			color: $Colorblanco;
+			width: 25%;
+			text-align: center;
+   			vertical-align: top;
+			border-spacing: 6px;
+			padding: 0.3em;
+			font-size: 20px;
+		}
+
+		&_tabla td{
+			width: 25%;
+   			text-align: left;
+   			vertical-align: top;
+			border: 1px solid #000;
+			border-spacing: 6px;
+			padding: 0.3em;
+			font-size: 20px;
+			background-color: $Colorgris;
+		}
+	}
+}
+
+@media screen and (max-width: $tabletas){
+	.informacion{
+
+		.cont-informacion{
+
+			&_titulo{
+				font-size: 14px;//
+			}
+
+			&_titulo span{
+				
+			}
+
+			&_imagen{
+				
+			}
+
+			&_imagen img{
+				width: 90%;//
+			}
+
+			&_tabla{
+	
+			}
+
+			&_tabla caption{
+				font-size: 14px;//
+			}
+
+			&_tabla table{
+				width : 100%;
+			}
+
+			&_tabla th{
+				font-size: 14px;//
+			}
+
+			&_tabla td{
+				font-size: 14px;//
+			}
+		}
+	}	
+}
