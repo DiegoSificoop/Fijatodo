@@ -3935,6 +3935,26 @@ h6 {
     margin-top: 60px;
     text-align: center; }
 
+.cont-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .cont-boton_consulta {
+    width: 50%;
+    background-color: #455d7a;
+    color: white;
+    padding: 6px 10px;
+    margin: 3px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    text-align: center; }
+    .cont-boton_consulta:hover {
+      background-color: #FCD137;
+      color: #232931; }
+
 .politicas {
   background-color: #fafafa;
   margin-top: 60px; }

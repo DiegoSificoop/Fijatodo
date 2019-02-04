@@ -57,7 +57,7 @@
 						<input type="file" name="">
 					</div>
 					<div class="cont-form_formulario_datos">
-						<span>Ingrese la descripción de atículo</span>
+						<span>Ingrese la descripción de artículo</span>
 						<input type="text" name="">
 					</div>
 					<div class="cont-form_formulario_datos">
@@ -86,6 +86,6 @@
 				</div>
 			</div>
 		</div>
-	</section<
+	</section>
 </body>
 </html>

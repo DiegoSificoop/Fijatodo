@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script src="../js/jquery/dist/jquery.min.js" type="text/javascript"></script>
 	<script src="../js/main.js" type="text/javascript"></script>
-	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<link rel="shortcut icon" href="../img/icon.ico"/>
 	<title>Administrador</title>
 	<script Language="JavaScript">
 	(function(){
@@ -44,8 +44,8 @@
 							<li class="li_children"><a href="nuevoarticulo.php" target="form" class="a_children"><span class="fa fa-plus fa-lg"></span>&nbsp; Nuevo artículo</a></li>
 						</ul>
 					</li>
-					<li class="menu_li"><a href="modificar.html" target="form" class="menu_a"><span class="fa fa-exchange fa-lg"></span>&nbsp; Modificar</a></li>
-					<li class="menu_li"><a href="consultar.html" target="form" class="menu_a"><span class="fa fa-clipboard fa-lg"></span>&nbsp; Consultar</a></li>
+					<li class="menu_li"><a href="modificar.php" target="form" class="menu_a"><span class="fa fa-exchange fa-lg"></span>&nbsp; Modificar</a></li>
+					<li class="menu_li"><a href="consultar.php" target="form" class="menu_a"><span class="fa fa-clipboard fa-lg"></span>&nbsp; Consultar</a></li>
 					<li class="menu_li"><a href="cerrarsesion.php" class="menu_a"><span class="fa fa-sign-out fa-lg"></span>&nbsp; Salir</a></li>
 				</ul>
 			</nav>
