@@ -1,6 +1,6 @@
 <?php
 	header("Content-Type: text/html;charset=utf-8");
-	require("conexion.php");
+	require("conexiones/conexion.php");
 	 
 	$id =  $_POST['id'];
 	$contrasena = md5($_POST['contrasena']);

@@ -19,7 +19,7 @@
 <?php 
 	//session_start();
 	if (empty($_SESSION['sesionA'])) {
-		echo "<script>location.href='redirect.php'</script>";
+		echo "<script>location.href='conexiones/redirect.php'</script>";
 	}
 ?>
 <body class="margin-body bg-color">
@@ -40,13 +40,23 @@
 					<li class="menu_li submenu">
 						<a href="#" class="menu_a"><span class="fa fa-file-text-o fa-lg"></span>&nbsp; Registrar<span class="iconsub fa fa-angle-down fa-lg"></span></a>
 						<ul class="children">
-							<li class="li_children"><a href="nuevacategoria.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Nueva categoria</a></li>
-							<li class="li_children"><a href="nuevoarticulo.php" target="form" class="a_children"><span class="fa fa-plus fa-lg"></span>&nbsp; Nuevo artículo</a></li>
+							<li class="li_children"><a href="registrar/nuevacategoria.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Nueva categoria</a></li>
+							<li class="li_children"><a href="registrar/nuevoarticulo.php" target="form" class="a_children"><span class="fa fa-plus fa-lg"></span>&nbsp; Nuevo artículo</a></li>
 						</ul>
 					</li>
-					<li class="menu_li"><a href="modificar.php" target="form" class="menu_a"><span class="fa fa-exchange fa-lg"></span>&nbsp; Modificar</a></li>
-					<li class="menu_li"><a href="consultar.php" target="form" class="menu_a"><span class="fa fa-clipboard fa-lg"></span>&nbsp; Consultar</a></li>
-					<li class="menu_li"><a href="cerrarsesion.php" class="menu_a"><span class="fa fa-sign-out fa-lg"></span>&nbsp; Salir</a></li>
+					<li class="menu_li submenu">
+						<a href="#" class="menu_a"><span class="fa fa-exchange fa-lg"></span>&nbsp; Modificar<span class="iconsub fa fa-angle-down fa-lg"></span></a>
+						<ul class="children">
+							<li class="li_children"><a href="modificar/modcategoria.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Categoria</a></li>
+							<li class="li_children"><a href="modificar/modsubcategoria.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Sub categoria</a></li>
+							<li class="li_children"><a href="modificar/modtipoarticulo.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Tipo de artículo</a></li>
+							<li class="li_children"><a href="modificar/modsubtipoarticulo.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Subtipo de artículo</a></li>
+							<li class="li_children"><a href="modificar/modarticulo.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Artículo</a></li>
+							<li class="li_children"><a href="modificar/modsubarticulo.php" target="form" class="a_children"><span class="fa fa-file fa-lg"></span>&nbsp; Sub artículo</a></li>
+							<li class="li_children"><a href="modificar/modificar.php" target="form" class="a_children"><span class="fa fa-plus fa-lg"></span>&nbsp; Información artículo</a></li>
+						</ul>
+					</li>
+					<li class="menu_li"><a href="conexiones/cerrarsesion.php" class="menu_a"><span class="fa fa-sign-out fa-lg"></span>&nbsp; Salir</a></li>
 				</ul>
 			</nav>
 		</div>
