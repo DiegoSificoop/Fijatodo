@@ -3955,8 +3955,28 @@ h6 {
       background-color: #FCD137;
       color: #232931; }
 
+.imagenpoliticas {
+  background-image: url("../img/politicas.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3px; }
+
+.imagenpoliticas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+  opacity: 0.9; }
+
 .politicas {
-  background-color: #fafafa;
   margin-top: 60px; }
   .politicas .cont-politicas {
     display: flex;
@@ -3974,8 +3994,8 @@ h6 {
     .politicas .cont-politicas_texto {
       display: flex;
       flex-direction: column;
-      color: #232931;
-      width: 50%;
+      color: white;
+      width: 60%;
       margin: 15px; }
       .politicas .cont-politicas_texto_titulo {
         text-align: left;
